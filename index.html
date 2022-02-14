@@ -80,26 +80,26 @@
             <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
                 <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
                     <li>
-                        <a href="#"
+                        <button onclick="ScrollToHome();"
                             class="block py-2 pr-4 pl-3 text-white bg-teal-700 rounded md:bg-transparent md:text-teal-500 md:p-0 dark:text-white"
-                            aria-current="page">Home</a>
+                            aria-current="page">Home</button>
                     </li>
                     <li>
-                        <a href="#"
-                            class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-teal-700 md:p-0 dark:text-gray-400 md:dark:hover:text-teal-800 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                        <button onclick="ScrollToAbout();"
+                            class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-teal-700 md:p-0 dark:text-gray-400 md:dark:hover:text-teal-800 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</button>
                     </li>
                     <li>
-                        <a href="#"
-                            class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-teal-700 md:p-0 dark:text-gray-400 md:dark:hover:text-teal-800 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+                        <button onclick="ScrollToServices();"
+                            class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-teal-700 md:p-0 dark:text-gray-400 md:dark:hover:text-teal-800 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</button>
                     </li>
                     <li>
-                        <a href="#"
+                        <button onclick="ScrollToStrengths();"
                             class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-teal-700 md:p-0 dark:text-gray-400 md:dark:hover:text-teal-800 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Our
-                            Vision</a>
+                            Strength</button>
                     </li>
                     <li>
-                        <a href="#"
-                            class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-teal-700 md:p-0 dark:text-gray-400 md:dark:hover:text-teal-800 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                        <button onclick="ScrollToContact();"
+                            class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-teal-700 md:p-0 dark:text-gray-400 md:dark:hover:text-teal-800 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</button>
                     </li>
                 </ul>
             </div>
@@ -108,7 +108,7 @@
     <!-- Navigation Bar -->
 
     <!-- Hero -->
-    <div class="py-10 sm:py-12 md:py-16 lg:py-20 xl:py-28 opacity-100  bg bg-heroimage bg-cover bg-center ">
+    <div id="hero" class="py-10 sm:py-12 md:py-16 lg:py-20 xl:py-28 opacity-100  bg bg-heroimage bg-cover bg-center ">
         <div class=" mx-auto max-w-7xl px-4  sm:px-6  lg:px-8  ">
             <div class="sm:text-center lg:text-center">
 
@@ -181,8 +181,10 @@
                     </div>
                     <div class="ml-16 ">
                         <div class="text-xl">Our Vision </div>
-                        <p>To be the first choice Oil, Tech , logistics, medical and construction services provider that
-                            meet and exceed its’ Clients’ expectations in Uganda and East Africa at large.</p>
+                        <p>To be the first choice in Oil &amp; Gas, Medical Equipment, Technology, Construction,
+                            Pharmaceutical Supplies, Real Estate Sale and Management, Consultancy and advisory service
+                            provider that meet and exceed its’ Clients’ expectations in Uganda and East Africa at
+                            large.</p>
 
 
                     </div>
@@ -195,7 +197,7 @@
 
 
     <!-- ABOUT US -->
-    <div class="  py-12 sm:py-12 lg:py-12  ">
+    <div id="about-us" class="  py-12 sm:py-12 lg:py-12  ">
         <div class="max-w-7xl  mx-auto px-4 sm:px-6 lg:px-8">
             <div class="mt-10">
 
@@ -240,7 +242,7 @@
     <!-- ABOUT US -->
 
     <!-- EXPLORE OUR SERVICES SECTION -->
-    <div class="py-12 sm:py-24 lg:py-24 bg-gray-100">
+    <div id="services" class="py-12 sm:py-24 lg:py-24 bg-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="sm:text-center">
 
@@ -347,7 +349,7 @@
 
 
 
-    <div class=" relative py-12 sm:py-24 lg:py-20 text-white">
+    <div id="strengths" class=" relative py-12 sm:py-24 lg:py-20 text-white">
         <div class="max-w-7xl mx-auto    ">
             <div class="container  px-4 sm:px-6 lg:px-12">
 
@@ -476,44 +478,40 @@
         <div class="mx-auto  ">
             <dl class=" sm:grid sm:grid-cols-3 lg:grid-cols-4 ">
                 <div class="p-12 bg-electricfence bg-cover bg-bottom">
-                    <div class="ap_heading text-3xl my-5">Electric Fence</div>
+                    <div class="ap_heading text-3xl my-5">Construction:</div>
                     <div class=" max-w-2xl  lg:mx-auto mb-5">
-                        Our electric fence solutions is a powerful perimeter intruder detection system which can be
-                        attached to an existing perimeter fence or wall. It provides an extra layer of security
-                        within a
-                        site’s perimeter as either a free-standing fence or mounted on a pre-existing one.
+                        At Avalanche, we are dedicated to providing infrastructure and building solutions for tomorrow’s
+                        world. We combine creative planning, design and construction with innovative engineering
+                        techniques to develop the most appropriate solutions, working sustainably to conserve energy,
+                        protect the environment and build communities.
                     </div>
                 </div>
                 <div class="p-12 bg-cctv bg-cover bg-bottom">
-                    <div class="ap_heading text-3xl my-5">CCTV</div>
+                    <div class="ap_heading text-3xl my-5">Engineering:</div>
                     <div class=" max-w-2xl  lg:mx-auto mb-5">
-                        CCTV technology enables operators to monitor events in real time, as well as at a later date
-                        using Hard drive units. At Avalanche, we keep up to date with technology advances in this
-                        field and the many CCTV and integrated systems now available, specializing in matching these
-                        systems to individual client requirements &amp; Automation
+                        Avalanche investment limited installs and distributes a full range of engineering equipment that
+                        include tractors, combine harvesters, Oil mining equipment, agricultural trailers, irrigation
+                        water
+                        bowsers, ploughs, Construction equipment, planters, rotovators, cultivators and more.
                     </div>
                 </div>
 
                 <div class="p-12 bg-fireextinguisher bg-cover bg-top">
-                    <div class="ap_heading text-3xl my-5">Fire & Safety </div>
+                    <div class="ap_heading text-3xl my-5">Technology &amp; Security solutions:</div>
                     <div class=" max-w-2xl  lg:mx-auto mb-5">
-                        Our trained personnel are always ready to conduct fire safety assessment whether at your
-                        private
-                        residence or large commercial premises. The feedbacks from such assessment will advise you
-                        what risks you’re currently running with regard to fire and safety. It will also advise what
-                        equipment or action should be taken to keep your premise fire safe, thus complying with
-                        international and Uganda law.
+                        We have the experience and expertise to integrate a wide range of monitoring and security
+                        systems, including event-driven automation of the following systems: Intrusion alarms, Access
+                        control systems, Video surveillance systems, Fire detection systems, Carbon monoxide sensors,
+                        under vehicle inspection systems, car parking, Elevator controls and Visitor Management
                     </div>
                 </div>
 
                 <div class="p-12 bg-securitylight bg-cover bg-top">
-                    <div class="ap_heading text-3xl my-5">Security Lighting</div>
+                    <div class="ap_heading text-3xl my-5">Consultancy:</div>
                     <div class=" max-w-2xl  lg:mx-auto mb-5">
-                        Avalanche provides a comprehensive range of automatic lighting and detection equipment to
-                        suit
-                        any environment or purpose. It is an area in which we have built up wide-ranging expertise
-                        and a
-                        strong reputation for matching systems and equipment to individual needs.
+                        We offer a comprehensive range of services to help you create, transform, protect, value and
+                        achieve your business goals. Our services can strengthen your business and stakeholders’
+                        confidence. You’ll receive professionally verified results in your business.
                     </div>
                 </div>
 
@@ -542,7 +540,7 @@
 
 
                 <dl
-                    class="space-y-10 sm:space-y-0  grid grid-cols-3  sm:grid-cols-3 lg:grid-cols-6 sm:gap-x-4 sm:gap-y-2 ">
+                    class="space-y-10 sm:space-y-8  grid grid-cols-3  sm:grid-cols-3 lg:grid-cols-4 sm:gap-x-4 sm:gap-y-2 ">
 
                     <div class="flex justify-center items-center">
                         <img class="object-cover" width="100" src="assets/kcca.png" alt="">
@@ -562,6 +560,9 @@
                     <div class="flex justify-center items-center">
                         <img class="object-cover" width="100" src="assets/e4d.png" alt="">
                     </div>
+                    <div class="flex justify-center items-center">
+                        <img class="object-cover" width="150" src="assets/8810_MOTUG_004.jpg" alt="">
+                    </div>
 
                 </dl>
             </div>
@@ -572,7 +573,7 @@
     <!-- CLIENTS SECTION -->
 
     <!-- CONTACT US -->
-    <div class="py-12 sm:py-24 lg:py-24 bg-gray-100">
+    <div id="contact" class="py-12 sm:py-24 lg:py-24 bg-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
             <div class="sm:text-center">
 
@@ -754,7 +755,35 @@
         </div>
     </div>
     <!-- FOOTER -->
+    <script>
 
+        function ScrollToHome() {
+            let hero = document.getElementById('hero');
+            hero.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+        }
+
+
+        function ScrollToAbout() {
+            let aboutus = document.getElementById('about-us');
+            aboutus.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+        }
+
+        function ScrollToStrengths() {
+            let strengths = document.getElementById('strengths');
+            strengths.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+        }
+
+        function ScrollToServices() {
+            let services = document.getElementById('services');
+            services.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+        }
+
+
+        function ScrollToContact() {
+            let contact = document.getElementById('contact');
+            contact.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+        }
+    </script>
 </body>
 
 </html>
